@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/nomeTf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="80dp"
+            android:layout_marginStart="80dp"
+            android:text="Convenção do IFPR"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/infoTf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/nomeTf"
+            android:layout_marginLeft="100dp"
+            android:layout_marginStart="100dp"
+            android:text="Expo Renault Barigui - Curitiba - PR"
+            android:textSize="11sp" />
+
+        <RelativeLayout
+            android:layout_width="60dp"
+            android:layout_height="70dp"
+            android:background="@color/blue"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true">
+
+            <TextView
+                android:id="@+id/diaTf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:text="01"
+                android:textSize="30sp"
+                android:textColor="@color/vermelhoClaro"
+                />
+
+            <TextView
+                android:id="@+id/mesTf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="11dp"
+                android:layout_marginBottom="3dp"
+                android:textColor="@color/vermelhoEscuro"
+                android:text="ABR"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tipoTf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/infoTf"
+            android:layout_marginTop="25dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:text=" Convenção "
+            android:background="@color/laranja"
+            />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_alignLeft="@+id/nomeTf"
+            android:layout_alignStart="@+id/nomeTf"
+            android:layout_below="@+id/nomeTf"
+            app:srcCompat="@drawable/local" />
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
